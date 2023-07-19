@@ -10,7 +10,7 @@ You will be working on 3 problems in the `problems` folder. Test cases are provi
     who's there
 
 ## Challenge 1
-In `pb1.py`, create a function that `replace_spaces` that accepts two inputs:
+In `pb1.py`, implement a function that `replace_spaces` that accepts two inputs:
 - A string that represents a sentence
 - The punctuation character that will replace the spaces in the sentence
 
@@ -27,11 +27,11 @@ Test__This_is_a_test__Testing_
 ```
 
 ## Challenge 2
-In `pb2.py`, create a function that given a list of numbers (positive or negative integers), it will return a list containing the indices of the two highest values. Order of the returned indices does not matter.
+In `pb2.py`, implement a function that given a list of numbers (positive or negative integers), it will return a list containing the **indices** of the two highest values. Order of the returned indices does not matter.
 
 Usage
 ```python
-print(max_values([4, 7, 2, 8, 10, 9]))
+print(two_indices([4, 7, 2, 8, 10, 9]))
 ```
 Output:
 ```
@@ -39,18 +39,29 @@ Output:
 ```
 
 ## Challenge 3
-In `pb3.py`, create a function that takes a dictionary of student names and their ages as input 
+In `pb3.py`, implement a function that takes a dictionary of student names and their ages as input 
 and returns the name of the youngest student.
 
-Usage:
+Usage #1:
 ```python
-students = {"Alice": 18, "Bob": 20, "Charlie": 19, "David": 22, "Jay": 20}
-print(youngest_student(students))
+students1 = {"Alice": 18, "Bob": 20, "Charlie": 19, "David": 22, "Jay": 20}
+print(pb3.youngest_student(students1))  # Expected output: "Alice"
 ```
 
-Output:
+Output #1:
 ```
 Alice
+```
+
+Usage #2:
+```python
+students2 = {"Alice": 19, "Bob": 15, "Charlie": 29, "David": 32, "Jay": 20}
+print(pb3.youngest_student(students2))  # Expected output: "Bob"
+```
+
+Output #2:
+```
+Bob
 ```
 
 ## Once done
