@@ -45,7 +45,7 @@ and returns the name of the youngest student.
 Usage #1:
 ```python
 students1 = {"Alice": 18, "Bob": 20, "Charlie": 19, "David": 22, "Jay": 20}
-print(pb3.youngest_student(students1))  # Expected output: "Alice"
+youngest_student(students1)
 ```
 
 Output #1:
@@ -56,7 +56,7 @@ Alice
 Usage #2:
 ```python
 students2 = {"Alice": 19, "Bob": 15, "Charlie": 29, "David": 32, "Jay": 20}
-print(pb3.youngest_student(students2))  # Expected output: "Bob"
+youngest_student(students2)
 ```
 
 Output #2:
